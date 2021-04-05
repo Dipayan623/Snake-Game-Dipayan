@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(250, 3, 3);
+  text-align: center;
+}
+
+#gameContainer {
+  width: 40vw;
+  height: 40vw;
+  margin: 2vw auto;
+  background-image: url("bg.png");
+  border: solid 10px rgb(7, 202, 89);
+}
+
+.gameBoardPixel {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 10px;
+  float: left;
+}
+
+.snakeBodyPixel {
+  background-color: #1809ee;
+}
+
+.food {
+  background-color: #f80707;
+}
+
+#scoreContainer {
+  width: 40vw;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.scoreBoard {
+  border: solid 5px rgb(199, 241, 8);
+  color: rgb(3, 250, 36);
+  background-color: #2801d1;
+  display: inline-block;
+  padding: 1vw;
+  width: 40%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  #gameContainer {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .gameBoardPixel {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  #scoreContainer {
+    width: 80vw;
+  }
+
+  #onScreenControllers {
+    width: 80vw;
+    margin: 5vw auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #onScreenControllers > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #onScreenControllers button {
+    background-color: transparent;
+    height: 40vw;
+    width: 40vw;
+    font-size: 10vw;
+    border: none;
+  }
+
+  #onScreenControllers button:focus {
+    outline: none;
+  }
+
+  #onScreenControllers button:active {
+    background-color: rgb(253, 5, 5);
+  }
+}
